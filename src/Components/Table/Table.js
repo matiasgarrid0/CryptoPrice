@@ -6,20 +6,22 @@ const Table = ({coins, search}) =>{
     const filteredCoins = coins.filter((coin)=>coin.name.toLowerCase().includes(search.toLowerCase()))
     
     return(
-       <table className='table black'>
-           <thead>
-                <tr className='white'>
-                   {title.map(title => (
-                       <td>{title}</td>
-                   ))}
-                </tr>
-           </thead>
-           <tbody>
-              {filteredCoins.map((coin, index) =>(
-                  <CoinRaw coin={coin} key={index} index={index+1}/>
-              ))}  
-           </tbody>
-       </table>
+      <div style={{ height: "100vh" }}>
+         <table className="table black">
+          <thead>
+            <tr className="white">
+              {title.map((title) => (
+                <td>{title}</td>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {filteredCoins.map((coin, index) => (
+              <CoinRaw coin={coin} key={index} index={index + 1} />
+            ))}
+          </tbody>
+        </table>
+      </div>
     )
 }
 
