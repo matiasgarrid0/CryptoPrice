@@ -1,0 +1,35 @@
+body {
+	background:#141414;
+	color: #fff;
+}
+
+.searchBar{
+  border-radius: 5px;
+font-size: 1.8rem;
+outline:none;
+border: 0.1px solid #2f2f2f;
+margin-top: 10px;
+}
+.black{
+  background-color:  #16181f;
+}
+.white{
+  color:rgba(255, 255, 255, 1);
+}
+.whiteSpan{
+  color:rgba(255, 255, 255, 0.3);
+}
+.pricePositive{
+color:green;
+}
+.priceNegative{
+  color:red;
+}
+.separate{
+  margin-left:15px;
+  text-transform: uppercase;
+}
+.center{
+  align-items: center;
+  text-align: center;
+}
